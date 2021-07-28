@@ -5,7 +5,12 @@ const app = express();
 let timeout = 0
 app.get('/test/candidate', (req, res, next) => {
     setTimeout(() => {
-        res.json({})
+        res.json([
+            {
+                "test_result_id": 271,
+                "test_url": "https://qa.wisecode.dev.br/invite-test/YW5kcmUudGVzdGVAZ21haWwuY29tfDI3MQ=="
+            }
+        ])
     }, timeout);
 })
 
